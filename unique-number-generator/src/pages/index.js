@@ -10,7 +10,7 @@ export default function Home() {
     const uniqueNumbers = new Set();
 
     while (uniqueNumbers.size < 5) {
-      uniqueNumbers.add(Math.floor(Math.random() * 45) + 1);
+      uniqueNumbers.add(Math.floor(Math.random() * 50) + 1);
     }
 
     const uniqueNumbers12 = new Set();
@@ -47,7 +47,7 @@ export default function Home() {
     const numbers45 = userNumbers45
       .split(",")
       .map((num) => parseInt(num.trim()))
-      .filter((num) => num >= 1 && num <= 45);
+      .filter((num) => num >= 1 && num <= 50);
 
     const numbers12 = userNumbers12
       .split(",")
